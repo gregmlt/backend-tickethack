@@ -5,6 +5,7 @@ const cartSchema = mongoose.Schema({
   arrival: String,
   date: Date,
   price: Number,
+  trip: [{ type: mongoose.Schema.Types.ObjectId, ref: "trips" }],
 });
 
 const Cart = mongoose.model("carts", cartSchema);
