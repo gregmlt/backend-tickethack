@@ -22,7 +22,8 @@ const corsOptions = {
     const allowedOrigins = [
       "http://localhost:3000",
       "http://localhost:3001",
-      "https://backend-tickethack-self.vercel.app/",
+      "https://backend-tickethack-self.vercel.app",
+      "https://frontend-tickethack-vert.vercel.app",
     ];
     if (allowedOrigins.includes(origin) || !origin) {
       callback(null, true);
